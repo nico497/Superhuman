@@ -1,0 +1,52 @@
+{
+ "weeks": [
+  {
+   "week": "2026-W43",
+   "date": "2026-10-20T01:18:11+00:00",
+   "sites": {
+    "Superhuman": {
+     "new": 0,
+     "updated": 0,
+     "removed": 0,
+     "pages": 136
+    },
+    "Shortwave": {
+     "new": 0,
+     "updated": 0,
+     "removed": 0,
+     "pages": 89
+    },
+    "Spark Mail": {
+     "new": 2,
+     "updated": 0,
+     "removed": 0,
+     "pages": 641
+    },
+    "Hey": {
+     "new": 0,
+     "updated": 0,
+     "removed": 0,
+     "pages": 0
+    },
+    "Front": {
+     "new": 5,
+     "updated": 0,
+     "removed": 0,
+     "pages": 638
+    },
+    "Missive": {
+     "new": 0,
+     "updated": 0,
+     "removed": 0,
+     "pages": 272
+    },
+    "Mailbird": {
+     "new": 40,
+     "updated": 0,
+     "removed": 0,
+     "pages": 1148
+    }
+   }
+  }
+ ]
+}

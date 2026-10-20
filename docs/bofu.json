@@ -1,0 +1,1848 @@
+{
+ "meta": {
+  "title": "Bottom-of-funnel content tracker",
+  "niche": "Fast, AI-assisted email client software for professionals and teams",
+  "you": "Superhuman",
+  "generated": "2026-10-20T01:26:29+00:00",
+  "state_updated": "2026-10-20T01:18:11+00:00",
+  "repo": "nico497/Superhuman"
+ },
+ "types": [
+  [
+   "vs_you",
+   "Us vs. them"
+  ],
+  [
+   "alt",
+   "Alternatives"
+  ],
+  [
+   "switch",
+   "Switching and migration"
+  ],
+  [
+   "pricing",
+   "Rival pricing breakdowns"
+  ],
+  [
+   "vs_rivals",
+   "Rival vs. rival"
+  ],
+  [
+   "best",
+   "Best-of and roundups"
+  ],
+  [
+   "case",
+   "Case and customer stories"
+  ]
+ ],
+ "sites": [
+  {
+   "name": "Superhuman",
+   "tracked": 272,
+   "considered": 134,
+   "own_pricing": "https://superhuman.com/plans",
+   "hubs": [
+    "https://superhuman.com/customer-stories"
+   ]
+  },
+  {
+   "name": "Shortwave",
+   "tracked": 89,
+   "considered": 89,
+   "own_pricing": "https://www.shortwave.com/pricing/",
+   "hubs": []
+  },
+  {
+   "name": "Spark Mail",
+   "tracked": 641,
+   "considered": 424,
+   "own_pricing": "https://sparkmailapp.com/pricing",
+   "hubs": []
+  },
+  {
+   "name": "Hey",
+   "tracked": 0,
+   "considered": 0,
+   "own_pricing": null,
+   "hubs": []
+  },
+  {
+   "name": "Front",
+   "tracked": 638,
+   "considered": 637,
+   "own_pricing": "https://front.com/pricing",
+   "hubs": [
+    "https://front.com/customer-stories"
+   ]
+  },
+  {
+   "name": "Missive",
+   "tracked": 610,
+   "considered": 264,
+   "own_pricing": "https://missiveapp.com/pricing",
+   "hubs": [
+    "https://missiveapp.com/customers"
+   ]
+  },
+  {
+   "name": "Mailbird",
+   "tracked": 1148,
+   "considered": 1147,
+   "own_pricing": "https://www.getmailbird.com/pricing/",
+   "hubs": []
+  }
+ ],
+ "vendors": [
+  "Shortwave",
+  "Spark Mail",
+  "Hey",
+  "Front",
+  "Missive",
+  "Mailbird",
+  "Superhuman",
+  "Gmail",
+  "Outlook",
+  "Airmail",
+  "Canary Mail",
+  "Edison Mail",
+  "Newton Mail",
+  "Readdle Spark",
+  "Polymail",
+  "Blue Mail"
+ ],
+ "excluded": {
+  "templated pages": 474,
+  "webinars, glossary, events and category pages": 229
+ },
+ "pages": [
+  {
+   "site": "Superhuman",
+   "url": "https://superhuman.com/customer-stories/mail/ateam",
+   "path": "/customer-stories/mail/ateam",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Superhuman",
+   "url": "https://superhuman.com/customer-stories/mail/brex",
+   "path": "/customer-stories/mail/brex",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Superhuman",
+   "url": "https://superhuman.com/customer-stories/mail/deel",
+   "path": "/customer-stories/mail/deel",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Superhuman",
+   "url": "https://superhuman.com/customer-stories/mail/gonimbly",
+   "path": "/customer-stories/mail/gonimbly",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Superhuman",
+   "url": "https://superhuman.com/customer-stories/mail/hebbia",
+   "path": "/customer-stories/mail/hebbia",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Superhuman",
+   "url": "https://superhuman.com/customer-stories/mail/rilla",
+   "path": "/customer-stories/mail/rilla",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Superhuman",
+   "url": "https://superhuman.com/customer-stories/mail/usergems",
+   "path": "/customer-stories/mail/usergems",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Superhuman",
+   "url": "https://superhuman.com/mail/compare/superhuman-mail-vs-shortwave",
+   "path": "/mail/compare/superhuman-mail-vs-shortwave",
+   "type": "vs_you",
+   "targets": [
+    "Shortwave"
+   ]
+  },
+  {
+   "site": "Shortwave",
+   "url": "https://www.shortwave.com/docs/migrations/migrating-from-gmail/",
+   "path": "/docs/migrations/migrating-from-gmail",
+   "type": "switch",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Shortwave",
+   "url": "https://www.shortwave.com/docs/migrations/migrating-from-spark-mail/",
+   "path": "/docs/migrations/migrating-from-spark-mail",
+   "type": "switch",
+   "targets": [
+    "Spark Mail"
+   ]
+  },
+  {
+   "site": "Shortwave",
+   "url": "https://www.shortwave.com/docs/migrations/migrating-from-superhuman/",
+   "path": "/docs/migrations/migrating-from-superhuman",
+   "type": "switch",
+   "targets": [
+    "Superhuman"
+   ]
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/blog/reasons-why-spark-makes-the-best-inbox-by-gmail-alternative",
+   "path": "/blog/reasons-why-spark-makes-the-best-inbox-by-gmail-alternative",
+   "type": "alt",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/guides/best-gmail-alternative",
+   "path": "/guides/best-gmail-alternative",
+   "type": "alt",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/guides/best-outlook-alternative",
+   "path": "/guides/best-outlook-alternative",
+   "type": "alt",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/uk/guides/best-gmail-alternative",
+   "path": "/uk/guides/best-gmail-alternative",
+   "type": "alt",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/case-study",
+   "path": "/case-study",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/case-study/dali-lab",
+   "path": "/case-study/dali-lab",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/case-study/delegation-communication",
+   "path": "/case-study/delegation-communication",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/case-study/read-statuses",
+   "path": "/case-study/read-statuses",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/case-study/spark-prioritization",
+   "path": "/case-study/spark-prioritization",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/case-study/spark-templates",
+   "path": "/case-study/spark-templates",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/case-study/zapier",
+   "path": "/case-study/zapier",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/uk/case-study",
+   "path": "/uk/case-study",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/uk/case-study/dali-lab",
+   "path": "/uk/case-study/dali-lab",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/uk/case-study/delegation-communication",
+   "path": "/uk/case-study/delegation-communication",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/uk/case-study/read-statuses",
+   "path": "/uk/case-study/read-statuses",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/uk/case-study/spark-prioritization",
+   "path": "/uk/case-study/spark-prioritization",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/uk/case-study/spark-templates",
+   "path": "/uk/case-study/spark-templates",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Spark Mail",
+   "url": "https://sparkmailapp.com/uk/case-study/zapier",
+   "path": "/uk/case-study/zapier",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/altour",
+   "path": "/customer-stories/altour",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/atlas-travel",
+   "path": "/customer-stories/atlas-travel",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/bentobox",
+   "path": "/customer-stories/bentobox",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/better",
+   "path": "/customer-stories/better",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/blueground",
+   "path": "/customer-stories/blueground",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/boostability",
+   "path": "/customer-stories/boostability",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/boundless-immigration",
+   "path": "/customer-stories/boundless-immigration",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/branch",
+   "path": "/customer-stories/branch",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/cisco-meraki",
+   "path": "/customer-stories/cisco-meraki",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/clx-logistics",
+   "path": "/customer-stories/clx-logistics",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/column",
+   "path": "/customer-stories/column",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/convelio",
+   "path": "/customer-stories/convelio",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/countsy",
+   "path": "/customer-stories/countsy",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/csw",
+   "path": "/customer-stories/csw",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/dealdash",
+   "path": "/customer-stories/dealdash",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/echo",
+   "path": "/customer-stories/echo",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/edge-logistics",
+   "path": "/customer-stories/edge-logistics",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/electrical-dot-com",
+   "path": "/customer-stories/electrical-dot-com",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/essentialist",
+   "path": "/customer-stories/essentialist",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/estes-forwarding-worldwide",
+   "path": "/customer-stories/estes-forwarding-worldwide",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/etix",
+   "path": "/customer-stories/etix",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/expeditus-transport",
+   "path": "/customer-stories/expeditus-transport",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/firewize",
+   "path": "/customer-stories/firewize",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/flex-tec",
+   "path": "/customer-stories/flex-tec",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/founder-shield",
+   "path": "/customer-stories/founder-shield",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/french-side-travel",
+   "path": "/customer-stories/french-side-travel",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/fundraise-up",
+   "path": "/customer-stories/fundraise-up",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/gattinoni-business-travel",
+   "path": "/customer-stories/gattinoni-business-travel",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/global",
+   "path": "/customer-stories/global",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/glt-logistics",
+   "path": "/customer-stories/glt-logistics",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/good-travel-management",
+   "path": "/customer-stories/good-travel-management",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/gp-transco",
+   "path": "/customer-stories/gp-transco",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/hermes-worldwide",
+   "path": "/customer-stories/hermes-worldwide",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/homeland",
+   "path": "/customer-stories/homeland",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/hootsuite",
+   "path": "/customer-stories/hootsuite",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/hostnfly",
+   "path": "/customer-stories/hostnfly",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/instructure",
+   "path": "/customer-stories/instructure",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/itf-group",
+   "path": "/customer-stories/itf-group",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/j-and-o-law",
+   "path": "/customer-stories/j-and-o-law",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/jukin-media",
+   "path": "/customer-stories/jukin-media",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/lilt",
+   "path": "/customer-stories/lilt",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/load-one",
+   "path": "/customer-stories/load-one",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/logistic-dynamics",
+   "path": "/customer-stories/logistic-dynamics",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/logistics-group-international",
+   "path": "/customer-stories/logistics-group-international",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/lydia",
+   "path": "/customer-stories/lydia",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/lydia-fr",
+   "path": "/customer-stories/lydia-fr",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/manda",
+   "path": "/customer-stories/manda",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/matera",
+   "path": "/customer-stories/matera",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/milenia",
+   "path": "/customer-stories/milenia",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/mixam",
+   "path": "/customer-stories/mixam",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/mnx",
+   "path": "/customer-stories/mnx",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/mongodb",
+   "path": "/customer-stories/mongodb",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/morningside",
+   "path": "/customer-stories/morningside",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/numbr",
+   "path": "/customer-stories/numbr",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/one-step-gps",
+   "path": "/customer-stories/one-step-gps",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/onefinestay",
+   "path": "/customer-stories/onefinestay",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/open-listings",
+   "path": "/customer-stories/open-listings",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/ovrsea",
+   "path": "/customer-stories/ovrsea",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/podium-education",
+   "path": "/customer-stories/podium-education",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/priority1",
+   "path": "/customer-stories/priority1",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/reed-and-mackay",
+   "path": "/customer-stories/reed-and-mackay",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/releaf-dispensary",
+   "path": "/customer-stories/releaf-dispensary",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/remedy-meds",
+   "path": "/customer-stories/remedy-meds",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/ridepanda",
+   "path": "/customer-stories/ridepanda",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/scratchpad",
+   "path": "/customer-stories/scratchpad",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/seafoam-media",
+   "path": "/customer-stories/seafoam-media",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/sennder",
+   "path": "/customer-stories/sennder",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/sennder-fr",
+   "path": "/customer-stories/sennder-fr",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/seso",
+   "path": "/customer-stories/seso",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/shaker-logistics",
+   "path": "/customer-stories/shaker-logistics",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/spruce",
+   "path": "/customer-stories/spruce",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/stewart-travel-management",
+   "path": "/customer-stories/stewart-travel-management",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/structured",
+   "path": "/customer-stories/structured",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/supacolor",
+   "path": "/customer-stories/supacolor",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/talon-air",
+   "path": "/customer-stories/talon-air",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/tbr-global-chauffeuring",
+   "path": "/customer-stories/tbr-global-chauffeuring",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/tequipment",
+   "path": "/customer-stories/tequipment",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/trusted-health",
+   "path": "/customer-stories/trusted-health",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/uber-freight",
+   "path": "/customer-stories/uber-freight",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/wizard-pins",
+   "path": "/customer-stories/wizard-pins",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/y-combinator",
+   "path": "/customer-stories/y-combinator",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/compare/front-vs-missive",
+   "path": "/compare/front-vs-missive",
+   "type": "vs_you",
+   "targets": [
+    "Missive"
+   ]
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/blog/5-best-alternatives-to-the-outlook-for-teams",
+   "path": "/blog/5-best-alternatives-to-the-outlook-for-teams",
+   "type": "alt",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/blog/gmail-alternatives",
+   "path": "/blog/gmail-alternatives",
+   "type": "alt",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/22-impact",
+   "path": "/customers/22-impact",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/agis-business-travel",
+   "path": "/customers/agis-business-travel",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/alacarte-solutions",
+   "path": "/customers/alacarte-solutions",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/all-star-cleaning-services",
+   "path": "/customers/all-star-cleaning-services",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/avenue-systems",
+   "path": "/customers/avenue-systems",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/canary-ride",
+   "path": "/customers/canary-ride",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/canex-global",
+   "path": "/customers/canex-global",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/canny",
+   "path": "/customers/canny",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/canonbury-group",
+   "path": "/customers/canonbury-group",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/cedar-consulting-group",
+   "path": "/customers/cedar-consulting-group",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/create-designs",
+   "path": "/customers/create-designs",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/datachef",
+   "path": "/customers/datachef",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/eshop-guide",
+   "path": "/customers/eshop-guide",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/ficks-music",
+   "path": "/customers/ficks-music",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/gigatronix",
+   "path": "/customers/gigatronix",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/gozel-law",
+   "path": "/customers/gozel-law",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/growth-alliance",
+   "path": "/customers/growth-alliance",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/hexany-audio",
+   "path": "/customers/hexany-audio",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/i-solids",
+   "path": "/customers/i-solids",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/ice-panel",
+   "path": "/customers/ice-panel",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/italic",
+   "path": "/customers/italic",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/lafleur-laborde",
+   "path": "/customers/lafleur-laborde",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/landr",
+   "path": "/customers/landr",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/lark-cake-shop",
+   "path": "/customers/lark-cake-shop",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/lighting-dynamics",
+   "path": "/customers/lighting-dynamics",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/lionize",
+   "path": "/customers/lionize",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/mcrae-s-environmental-services",
+   "path": "/customers/mcrae-s-environmental-services",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/morning",
+   "path": "/customers/morning",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/nicholson-events",
+   "path": "/customers/nicholson-events",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/nixa",
+   "path": "/customers/nixa",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/novak-conversions",
+   "path": "/customers/novak-conversions",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/pipedrive",
+   "path": "/customers/pipedrive",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/ppg-property-management",
+   "path": "/customers/ppg-property-management",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/relay",
+   "path": "/customers/relay",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/scale-cpa",
+   "path": "/customers/scale-cpa",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/senders",
+   "path": "/customers/senders",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/smplrspace",
+   "path": "/customers/smplrspace",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/sound-quiet-time",
+   "path": "/customers/sound-quiet-time",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/stage-sound-services",
+   "path": "/customers/stage-sound-services",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/tabaibo",
+   "path": "/customers/tabaibo",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/the-academy-school",
+   "path": "/customers/the-academy-school",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/tomahawk",
+   "path": "/customers/tomahawk",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/trama",
+   "path": "/customers/trama",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/twins-cities-auto-glass",
+   "path": "/customers/twins-cities-auto-glass",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/uncute",
+   "path": "/customers/uncute",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/weekly-accounting",
+   "path": "/customers/weekly-accounting",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/wonoak",
+   "path": "/customers/wonoak",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/worders",
+   "path": "/customers/worders",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/customers/wulfsfish",
+   "path": "/customers/wulfsfish",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/blog/outlook-vs-gmail-for-business-which-is-better",
+   "path": "/blog/outlook-vs-gmail-for-business-which-is-better",
+   "type": "vs_rivals",
+   "targets": [
+    "Gmail",
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/compare/best-superhuman-alternative",
+   "path": "/compare/best-superhuman-alternative",
+   "type": "vs_you",
+   "targets": [
+    "Superhuman"
+   ]
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/compare/frontapp-vs-missive",
+   "path": "/compare/frontapp-vs-missive",
+   "type": "vs_you",
+   "targets": [
+    "Front"
+   ]
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/compare/shortwave-email-vs-missive",
+   "path": "/compare/shortwave-email-vs-missive",
+   "type": "vs_you",
+   "targets": [
+    "Shortwave"
+   ]
+  },
+  {
+   "site": "Missive",
+   "url": "https://missiveapp.com/compare/spark-mail-vs-missive",
+   "path": "/compare/spark-mail-vs-missive",
+   "type": "vs_you",
+   "targets": [
+    "Spark Mail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/8-best-outlook-email-client-alternatives-for-windows-and-mac-2026/",
+   "path": "/8-best-outlook-email-client-alternatives-for-windows-and-mac-2026",
+   "type": "alt",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-airmail-alternatives-mac/",
+   "path": "/best-airmail-alternatives-mac",
+   "type": "alt",
+   "targets": [
+    "Airmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-alternative-to-newton-mail/",
+   "path": "/best-alternative-to-newton-mail",
+   "type": "alt",
+   "targets": [
+    "Newton Mail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-bluemail-alternative-mac-sync-fix/",
+   "path": "/best-bluemail-alternative-mac-sync-fix",
+   "type": "alt",
+   "targets": [
+    "Blue Mail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-bluemail-alternatives-macos/",
+   "path": "/best-bluemail-alternatives-macos",
+   "type": "alt",
+   "targets": [
+    "Blue Mail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-canary-mail-alternatives-macos/",
+   "path": "/best-canary-mail-alternatives-macos",
+   "type": "alt",
+   "targets": [
+    "Canary Mail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-edison-mail-alternative-windows/",
+   "path": "/best-edison-mail-alternative-windows",
+   "type": "alt",
+   "targets": [
+    "Edison Mail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-edison-mail-alternatives-mac-privacy/",
+   "path": "/best-edison-mail-alternatives-mac-privacy",
+   "type": "alt",
+   "targets": [
+    "Edison Mail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-front-app-alternatives-macos-individual/",
+   "path": "/best-front-app-alternatives-macos-individual",
+   "type": "alt",
+   "targets": [
+    "Front"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-gmail-alternatives/",
+   "path": "/best-gmail-alternatives",
+   "type": "alt",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-gmail-app-mac-apple-mail-alternative",
+   "path": "/best-gmail-app-mac-apple-mail-alternative",
+   "type": "alt",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-gmail-desktop-alternatives-mac/",
+   "path": "/best-gmail-desktop-alternatives-mac",
+   "type": "alt",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-hey-email-alternative-windows-users/",
+   "path": "/best-hey-email-alternative-windows-users",
+   "type": "alt",
+   "targets": [
+    "Hey"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-kiwi-gmail-alternatives-mac-desktop-email/",
+   "path": "/best-kiwi-gmail-alternatives-mac-desktop-email",
+   "type": "alt",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-missive-alternatives-macos/",
+   "path": "/best-missive-alternatives-macos",
+   "type": "alt",
+   "targets": [
+    "Missive"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-newton-mail-alternatives-macos/",
+   "path": "/best-newton-mail-alternatives-macos",
+   "type": "alt",
+   "targets": [
+    "Newton Mail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-outlook-alternative-for-windows-in-2026-desktop-email-clients-compared/",
+   "path": "/best-outlook-alternative-for-windows-in-2026-desktop-email-clients-compared",
+   "type": "alt",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-outlook-alternative-small-business/",
+   "path": "/best-outlook-alternative-small-business",
+   "type": "alt",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-outlook-email-app-mac-alternatives/",
+   "path": "/best-outlook-email-app-mac-alternatives",
+   "type": "alt",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-polymail-alternatives-macos/",
+   "path": "/best-polymail-alternatives-macos",
+   "type": "alt",
+   "targets": [
+    "Polymail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-superhuman-alternatives-macos/",
+   "path": "/best-superhuman-alternatives-macos",
+   "type": "alt",
+   "targets": [
+    "Superhuman"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/canary-mail-alternative-secure-mac-email/",
+   "path": "/canary-mail-alternative-secure-mac-email",
+   "type": "alt",
+   "targets": [
+    "Canary Mail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/gmail-ai-privacy-desktop-email-alternatives/",
+   "path": "/gmail-ai-privacy-desktop-email-alternatives",
+   "type": "alt",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/gmail-alternative/",
+   "path": "/gmail-alternative",
+   "type": "alt",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/gmail-offline-limitations-desktop-alternatives/",
+   "path": "/gmail-offline-limitations-desktop-alternatives",
+   "type": "alt",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/gmail-unified-inbox-alternatives/",
+   "path": "/gmail-unified-inbox-alternatives",
+   "type": "alt",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/lightweight-email-clients-mac-outlook-alternative/",
+   "path": "/lightweight-email-clients-mac-outlook-alternative",
+   "type": "alt",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/mailbird-best-alternative-to-outlook/",
+   "path": "/mailbird-best-alternative-to-outlook",
+   "type": "alt",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/microsoft-new-outlook-desktop-alternatives/",
+   "path": "/microsoft-new-outlook-desktop-alternatives",
+   "type": "alt",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/missive-alternatives-mac-lightweight-email-clients/",
+   "path": "/missive-alternatives-mac-lightweight-email-clients",
+   "type": "alt",
+   "targets": [
+    "Missive"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/newton-mail-alternatives-mac-reliable-email-clients/",
+   "path": "/newton-mail-alternatives-mac-reliable-email-clients",
+   "type": "alt",
+   "targets": [
+    "Newton Mail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/outlook-alternative/",
+   "path": "/outlook-alternative",
+   "type": "alt",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/outlook-feels-cluttered-8-cleaner-outlook-alternatives-for-2026/",
+   "path": "/outlook-feels-cluttered-8-cleaner-outlook-alternatives-for-2026",
+   "type": "alt",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/polymail-alternatives-mac-reliable-email-clients/",
+   "path": "/polymail-alternatives-mac-reliable-email-clients",
+   "type": "alt",
+   "targets": [
+    "Polymail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/gmail-tabs-productivity-cost-unified-inbox/",
+   "path": "/gmail-tabs-productivity-cost-unified-inbox",
+   "type": "pricing",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/gmail-vendor-lock-in-business-costs/",
+   "path": "/gmail-vendor-lock-in-business-costs",
+   "type": "pricing",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/hidden-cost-gmail-account-sprawl-business/",
+   "path": "/hidden-cost-gmail-account-sprawl-business",
+   "type": "pricing",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/hidden-cost-gmail-web-interface-business/",
+   "path": "/hidden-cost-gmail-web-interface-business",
+   "type": "pricing",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/real-cost-gmail-storage-business/",
+   "path": "/real-cost-gmail-storage-business",
+   "type": "pricing",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/apple-mail-vs-outlook-on-mac-2026-which-mail-app-is-better-and-should-you-switch/",
+   "path": "/apple-mail-vs-outlook-on-mac-2026-which-mail-app-is-better-and-should-you-switch",
+   "type": "switch",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/gmail-account-switching-issues-why-its-inefficient/",
+   "path": "/gmail-account-switching-issues-why-its-inefficient",
+   "type": "switch",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/gmail-account-switching-productivity-cost/",
+   "path": "/gmail-account-switching-productivity-cost",
+   "type": "switch",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/gmail-in-the-browser-vs-a-desktop-email-client-when-to-make-the-switch/",
+   "path": "/gmail-in-the-browser-vs-a-desktop-email-client-when-to-make-the-switch",
+   "type": "switch",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/gmail-privacy-email-migration-guide/",
+   "path": "/gmail-privacy-email-migration-guide",
+   "type": "switch",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/how-to-migrate-from-outlook-to-mailbird-step-by-step-guide/",
+   "path": "/how-to-migrate-from-outlook-to-mailbird-step-by-step-guide",
+   "type": "switch",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/how-to-switch-back-to-classic-outlook/",
+   "path": "/how-to-switch-back-to-classic-outlook",
+   "type": "switch",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/microsoft-retires-legacy-outlook-add-ins-migration-guide/",
+   "path": "/microsoft-retires-legacy-outlook-add-ins-migration-guide",
+   "type": "switch",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/migrate-large-outlook-mailbox-apple-mail-without-data-loss/",
+   "path": "/migrate-large-outlook-mailbox-apple-mail-without-data-loss",
+   "type": "switch",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/gmail-vs-outlook-productivity/",
+   "path": "/gmail-vs-outlook-productivity",
+   "type": "vs_rivals",
+   "targets": [
+    "Gmail",
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/outlook-vs-gmail/",
+   "path": "/outlook-vs-gmail",
+   "type": "vs_rivals",
+   "targets": [
+    "Gmail",
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/outlook-vs-gmail-for-business-which-email-platform-is-better-for-teams-in-2026/",
+   "path": "/outlook-vs-gmail-for-business-which-email-platform-is-better-for-teams-in-2026",
+   "type": "vs_rivals",
+   "targets": [
+    "Gmail",
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/best-email-client-for-windows-11-mailbird-vs-the-new-outlook/",
+   "path": "/best-email-client-for-windows-11-mailbird-vs-the-new-outlook",
+   "type": "vs_you",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/mailbird-vs-gmail/",
+   "path": "/mailbird-vs-gmail",
+   "type": "vs_you",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/mailbird-vs-gmail-windows/",
+   "path": "/mailbird-vs-gmail-windows",
+   "type": "vs_you",
+   "targets": [
+    "Gmail"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/mailbird-vs-new-outlook/",
+   "path": "/mailbird-vs-new-outlook",
+   "type": "vs_you",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/mailbird-vs-outlook/",
+   "path": "/mailbird-vs-outlook",
+   "type": "vs_you",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/mailbird-vs-outlook-vs-thunderbird/",
+   "path": "/mailbird-vs-outlook-vs-thunderbird",
+   "type": "vs_you",
+   "targets": [
+    "Outlook"
+   ]
+  },
+  {
+   "site": "Mailbird",
+   "url": "https://www.getmailbird.com/modern-email-vs-outlook-workflow-comparison-mailbird-vs-outlook/",
+   "path": "/modern-email-vs-outlook-workflow-comparison-mailbird-vs-outlook",
+   "type": "vs_you",
+   "targets": [
+    "Outlook"
+   ]
+  }
+ ]
+}
