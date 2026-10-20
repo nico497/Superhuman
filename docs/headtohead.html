@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Head-to-Head Radar — Superhuman</title>
+<style>
+
+@font-face {
+  font-family: "Archivo"; font-style: normal; font-weight: 100 900; font-stretch: 62% 125%; font-display: swap;
+  src: url(fonts/archivo-latin-wdth-normal.woff2) format("woff2");
+}
+:root {
+  --paper: #ffffff; --surface: #ffffff; --panel: #f0f6fe; --mark: #e8f0fe;
+  --navy: #3a547a; --ink: #394150; --ink-2: #566073; --ink-3: #697384; --line: #dfe6f1;
+  --cyan: #67e0e1; --you: #0aa8bf; --you-wash: #dff6f9;
+  --rival: #3a547a; --btn-bg: #3a547a; --btn-ink: #67e0e1; --focus: #3a547a;
+  --shadow: 0 4px 18px rgba(58,84,122,.10);
+  --up: #127a45; --down: #b42318;
+  --t1: #3a547a; --t2: #0aa8bf; --t3: #67e0e1; --t4: #7b93b8; --t5: #a9bfe0; --t6: #2c7da0; --t7: #c3ccd9; --t8: #1f2d44;
+  --sans: "Archivo", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0f1623; --surface: #161f30; --panel: #1b2740; --mark: #243452;
+    --navy: #a9c1e6; --ink: #dfe6f2; --ink-2: #b2bccd; --ink-3: #8c97aa; --line: #2a3750;
+    --you: #67e0e1; --you-wash: #17353b; --rival: #8fa9d1;
+    --btn-bg: #67e0e1; --btn-ink: #0f1623; --focus: #67e0e1; --shadow: none; --up: #4ade80; --down: #f87171;
+    --t1: #a9c1e6; --t2: #2fb8cf; --t3: #67e0e1; --t4: #7b93b8; --t5: #dbe6f7; --t6: #3f8fb3; --t7: #596a85; --t8: #8aa0c4;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0f1623; --surface: #161f30; --panel: #1b2740; --mark: #243452;
+  --navy: #a9c1e6; --ink: #dfe6f2; --ink-2: #b2bccd; --ink-3: #8c97aa; --line: #2a3750;
+  --you: #67e0e1; --you-wash: #17353b; --rival: #8fa9d1;
+  --btn-bg: #67e0e1; --btn-ink: #0f1623; --focus: #67e0e1; --shadow: none; --up: #4ade80; --down: #f87171;
+  --t1: #a9c1e6; --t2: #2fb8cf; --t3: #67e0e1; --t4: #7b93b8; --t5: #dbe6f7; --t6: #3f8fb3; --t7: #596a85; --t8: #8aa0c4;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 16px/1.55 var(--sans); font-stretch: 100%; }
+a { color: inherit; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+.hide { display: none !important; }
+
+/* ---------- Top of page ---------- */
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px 88px; }
+.mast { display: flex; justify-content: space-between; align-items: center; gap: 8px 16px; flex-wrap: wrap; padding: 24px 0 48px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--navy); text-decoration: none; font: 800 18px/1 var(--sans); font-stretch: 112%; }
+.stamp { font-size: 14px; color: var(--ink-3); }
+#alerts:empty { display: none; }
+#alerts { margin: 0 0 28px; display: grid; gap: 8px; }
+.alert { background: #fdecec; color: #8a1c1c; border-radius: 10px; padding: 10px 14px; font-size: 14px; }
+mark.hl { background: var(--mark); color: inherit; border-radius: 6px; padding: 0 .14em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+mark.hl.you { background: var(--you-wash); }
+.lead { margin: 0 0 28px; max-width: 44em; color: var(--navy); font-size: clamp(19px, 2vw, 24px); line-height: 1.5; font-weight: 600; letter-spacing: -.005em; }
+
+.tag, .youtag { display: inline-block; margin-left: 8px; padding: 3px 8px; border-radius: 5px; background: var(--btn-bg); color: var(--btn-ink); font: 700 12px/1 var(--sans); vertical-align: 3px; }
+
+/* ---------- Key points ---------- */
+.points { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; }
+.points:empty { display: none; }
+.points li { background: var(--panel); border-radius: 14px; padding: 24px; box-shadow: var(--shadow); }
+.points p { margin: 0 0 16px; font-size: 18px; line-height: 1.5; font-weight: 500; color: var(--ink); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-block; padding: 3px 10px; border-radius: 6px; background: var(--surface); border: 1px solid var(--line); color: var(--navy); font-size: 14px; font-weight: 600; }
+.chip.you { background: var(--btn-bg); border-color: var(--btn-bg); color: var(--btn-ink); }
+
+/* ---------- Sections ---------- */
+.sec { margin-top: 88px; }
+.sechead { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px 24px; flex-wrap: wrap; margin: 0 0 24px; }
+.title { margin: 0; color: var(--navy); font: 800 clamp(26px, 3vw, 34px)/1.1 var(--sans); font-stretch: 110%; letter-spacing: -.015em; }
+.facts { margin: 20px 0 0; max-width: 44em; color: var(--ink-2); font-size: clamp(17px, 1.6vw, 20px); line-height: 1.55; }
+.facts:empty { display: none; }
+#headline h1 { max-width: 20em; text-wrap: balance; }
+h1.title { font-size: clamp(32px, 4.4vw, 52px); line-height: 1.08; letter-spacing: -.02em; }
+.sub { margin: 8px 0 0; color: var(--ink-2); font-size: 16px; }
+.toggle { display: inline-flex; padding: 3px; gap: 2px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.toggle button { border: 0; background: transparent; border-radius: 7px; padding: 8px 14px; font-size: 15px; font-weight: 600; color: var(--ink-2); }
+.toggle button[aria-pressed="true"] { background: var(--btn-bg); color: var(--btn-ink); }
+
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 0 0 18px; font-size: 14px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+.sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; flex: none; }
+
+.h2h { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 20px; }
+.col { background: var(--surface); border: 1px solid var(--line); border-top: 6px solid var(--rival); border-radius: 12px; padding: 24px; min-width: 0; box-shadow: var(--shadow); }
+.col.you { border-top-color: var(--you); }
+.colhead { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.cname { margin: 0; color: var(--navy); font: 800 26px/1.1 var(--sans); font-stretch: 108%; letter-spacing: -.01em; }
+.cname a { text-decoration: none; }
+.cname a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.tabs { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 22px; }
+.tabs:empty { display: none; }
+.tabslabel { margin-right: 4px; font-size: 15px; color: var(--ink-2); }
+.tabs button { padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--navy); font-size: 15px; font-weight: 600; }
+.tabs button:hover { border-color: var(--navy); }
+.tabs button[aria-pressed="true"] { background: var(--btn-bg); border-color: var(--btn-bg); color: var(--btn-ink); }
+.figs { display: flex; flex-wrap: wrap; gap: 8px 36px; margin: 22px 0 6px; }
+.fig b { display: block; color: var(--navy); font: 800 42px/1 var(--sans); font-stretch: 116%; font-variant-numeric: tabular-nums; }
+.fig span { display: block; margin-top: 6px; font-size: 14px; color: var(--ink-2); }
+.d.up { color: var(--up); font-weight: 700; } .d.down { color: var(--down); font-weight: 700; }
+.sitepages { margin: 0 0 20px; font-size: 14px; color: var(--ink-3); }
+.mix { display: flex; gap: 2px; height: 24px; margin: 0 0 8px; }
+.mix i { display: block; height: 100%; min-width: 3px; }
+.mix i:first-child { border-radius: 6px 0 0 6px; } .mix i:last-child { border-radius: 0 6px 6px 0; } .mix i:only-child { border-radius: 6px; }
+.mix.empty { background: var(--panel); border: 1px dashed var(--line); border-radius: 6px; }
+.mixline { margin: 0 0 18px; font-size: 14px; color: var(--ink-2); }
+.playline { margin: 0 0 8px; font-size: 16px; }
+.playline b { font-weight: 700; color: var(--navy); }
+.meta { margin-top: 6px; font-size: 14px; color: var(--ink-3); }
+.fail { color: var(--down); font-size: 15px; margin: 16px 0 0; }
+.trend { display: flex; align-items: flex-end; gap: 10px; margin-top: 18px; }
+.trend svg { fill: var(--rival); } .trend span { font-size: 14px; color: var(--ink-3); }
+.col.you .trend svg { fill: var(--you); }
+.versus { margin: 20px 0 0; padding: 20px 24px; border-radius: 12px; border-left: 6px solid var(--you); background: var(--panel); font-size: 17px; line-height: 1.5; box-shadow: var(--shadow); }
+.versus b { font-weight: 700; color: var(--navy); }
+.note { max-width: 62em; margin: 18px 0 0; font-size: 14px; color: var(--ink-3); }
+.empty-note { color: var(--ink-3); font-size: 15px; background: var(--panel); border-radius: 12px; padding: 16px 20px; margin: 0; }
+
+.tablewrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+table.nums { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+table.nums th, table.nums td { padding: 12px 14px; text-align: right; border-bottom: 1px solid var(--line); white-space: nowrap; }
+table.nums tr:last-child td { border-bottom: 0; }
+table.nums th { font-size: 13px; font-weight: 600; color: var(--ink-2); background: var(--surface); }
+table.nums th:first-child, table.nums td:first-child { text-align: left; position: sticky; left: 0; background: var(--surface); font-weight: 700; color: var(--navy); }
+table.nums td.h { background: color-mix(in srgb, var(--rival) calc(var(--v, 0) * 26%), transparent); }
+table.nums tr.you td { background: var(--you-wash); }
+table.nums tr.you td.h { background: color-mix(in srgb, var(--rival) calc(var(--v, 0) * 26%), var(--you-wash)); }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; box-shadow: var(--shadow); }
+.card h3 { margin: 14px 0 8px; color: var(--navy); font: 700 20px/1.25 var(--sans); font-stretch: 106%; }
+.card p { margin: 0 0 14px; color: var(--ink-2); }
+.meter { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--ink-2); }
+.cells { display: flex; gap: 3px; }
+.cells i { width: 16px; height: 8px; border-radius: 2px; background: var(--line); }
+.cells i.on { background: var(--navy); }
+.card.gap { background: var(--panel); border: 2px dashed color-mix(in srgb, var(--navy) 35%, transparent); box-shadow: none; }
+.card.gap h3 { margin-top: 0; font-size: 22px; }
+.card.gap p { color: var(--ink); margin: 0; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 14px; margin: 0 0 16px; background: var(--panel); border-radius: 12px; }
+.filters select { max-width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; font-size: 15px; }
+.go { padding: 11px 24px; border: 0; border-radius: 8px; background: var(--btn-bg); color: var(--btn-ink); font: 700 15px/1 var(--sans); }
+.go:hover { opacity: .92; }
+.posts { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.post { padding: 18px 22px 18px 20px; border-top: 1px solid var(--line); border-left: 6px solid var(--tc, var(--line)); }
+.post:first-child { border-top: 0; }
+.pmeta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-size: 14px; color: var(--ink-3); }
+.pmeta .who { color: var(--navy); font-weight: 700; }
+.type { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); }
+.kind { padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+.kind.new { background: var(--btn-bg); color: var(--btn-ink); }
+.nav { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.nav svg { margin-right: 4px; }
+.nav a { padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--navy); font: 700 15px/1.2 var(--sans); text-decoration: none; }
+.nav a:hover { border-color: var(--navy); }
+.nav a[aria-current="page"] { background: var(--btn-bg); border-color: var(--btn-bg); color: var(--btn-ink); }
+
+.mx { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+.mx th, .mx td { padding: 0; text-align: center; border-bottom: 1px solid var(--line); }
+.mx thead th { padding: 12px 8px; font-size: 13px; font-weight: 700; color: var(--ink-2); white-space: nowrap; }
+.mx th.rl, .mx td.rl { text-align: left; padding: 12px 14px; position: sticky; left: 0; background: var(--surface); font-weight: 700; color: var(--navy); min-width: 190px; z-index: 1; }
+.mx tr:last-child td { border-bottom: 0; }
+.mx td.c button { display: block; width: 100%; min-width: 64px; padding: 14px 8px; border: 0; background: color-mix(in srgb, var(--navy) calc(var(--v, 0) * 30%), transparent); font: 700 16px/1 var(--sans); color: var(--navy); }
+.mx td.c button:hover { outline: 2px solid var(--navy); outline-offset: -2px; }
+.mx td.c.you button { background: color-mix(in srgb, var(--you) calc(var(--v, 0) * 34% + 10%), var(--you-wash)); }
+.mx td.c.zero button { color: var(--ink-3); font-weight: 600; }
+.mx td.st { padding: 0 14px; text-align: left; white-space: nowrap; }
+.pill { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 13px; font-weight: 700; }
+.pill.behind { background: #fdecec; color: #9b1c1c; } .pill.par { background: var(--mark); color: var(--navy); } .pill.ahead { background: #e3f6ea; color: #14633a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pill.behind { background: #3a1d22; color: #fca5a5; } :root:not([data-theme="light"]) .pill.ahead { background: #153a28; color: #86efac; } }
+.mx td.c.sel button { box-shadow: inset 0 0 0 3px var(--btn-bg); }
+.gaps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 20px; counter-reset: g; }
+.gaps li { background: var(--panel); border-radius: 14px; padding: 24px; box-shadow: var(--shadow); counter-increment: g; }
+.gaps li::before { content: counter(g); display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--btn-bg); color: var(--btn-ink); font: 800 15px/1 var(--sans); margin-bottom: 14px; }
+.gaps h3 { margin: 0 0 8px; color: var(--navy); font: 800 22px/1.2 var(--sans); font-stretch: 106%; }
+.gaps p { margin: 0 0 14px; color: var(--ink); font-size: 17px; line-height: 1.5; }
+.chip.no { border-style: dashed; }
+.chip small { font-weight: 500; color: var(--ink-3); margin-left: 4px; }
+.vg td.c, .vg th.c { padding: 10px 8px; }
+.vg .y { color: var(--up); font-weight: 800; } .vg .n { color: var(--down); font-weight: 800; }
+.vg .cnt { display: block; font-size: 12px; font-weight: 600; color: var(--ink-3); }
+.vg td.c.gapcell { background: var(--panel); }
+.tg { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; }
+.tg .card h3 { margin-top: 0; }
+.tg ul { margin: 0; padding: 0; list-style: none; font-size: 14px; }
+.tg li { padding: 3px 0; overflow-wrap: anywhere; }
+.pl { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.tip { position: fixed; z-index: 20; max-width: 280px; padding: 10px 12px; border-radius: 10px; background: var(--btn-bg); color: var(--btn-ink); font-size: 13px; line-height: 1.45; pointer-events: none; box-shadow: var(--shadow); }
+.tip b { display: block; margin-bottom: 2px; color: #fff; }
+.cplay { margin: 0 0 12px; font-size: 16px; color: var(--ink); } .cplay b { color: var(--navy); }
+.ctypes { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+.ctypes button { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--navy); font-size: 14px; font-weight: 600; }
+.ctypes button:hover { border-color: var(--navy); }
+.cp { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+.cp > div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 24px; box-shadow: var(--shadow); }
+.cp .cn { background: var(--panel); border-color: transparent; }
+.cp .cn h3 { margin: 0 0 12px; color: var(--navy); font: 700 20px/1.25 var(--sans); font-stretch: 106%; }
+.cp ul { margin: 0; padding: 0; list-style: none; font-size: 15px; } .cp li { padding: 5px 0; overflow-wrap: anywhere; } .cp .ty { font-size: 13px; color: var(--ink-3); }
+@media (max-width: 720px) { .cp { grid-template-columns: 1fr; } }
+.pl.hide { display: none; }
+.pr { display: grid; grid-template-columns: 110px 1fr auto; gap: 4px 16px; align-items: baseline; padding: 12px 18px; border-top: 1px solid var(--line); font-size: 15px; }
+.pr:first-child { border-top: 0; }
+.pr .who { color: var(--navy); font-weight: 700; }
+.pr a { overflow-wrap: anywhere; }
+.pr .ty { font-size: 13px; color: var(--ink-3); }
+.pr.you { border-left: 6px solid var(--you); padding-left: 12px; }
+.more { padding: 12px 18px; border-top: 1px solid var(--line); background: var(--panel); }
+.more button { border: 0; background: none; color: var(--navy); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+ul.how { margin: 0; padding-left: 20px; color: var(--ink-2); max-width: 62em; } ul.how li { margin: 6px 0; }
+@media (max-width: 720px) { .wrap { padding: 0 16px 64px; } .sec { margin-top: 64px; } .pr { grid-template-columns: 1fr; } .mx th.rl, .mx td.rl { min-width: 140px; } }
+
+.mockbar { margin: -24px 0 36px; padding: 10px 14px; border-radius: 10px; background: #fff6e0; color: #6b4a00; font-size: 14px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .mockbar { background: #3a2f12; color: #f5d98a; } }
+.sb { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+.sb th, .sb td { padding: 0; border-bottom: 1px solid var(--line); text-align: center; }
+.sb thead th { padding: 12px 8px; font-size: 13px; font-weight: 700; color: var(--ink-2); white-space: nowrap; }
+.sb thead th.pick { color: var(--navy); }
+.sb th.rl, .sb td.rl { text-align: left; padding: 12px 14px; position: sticky; left: 0; background: var(--surface); font-weight: 700; color: var(--navy); min-width: 130px; z-index: 1; }
+.sb tr:last-child td { border-bottom: 0; }
+.sb td.v button { display: block; width: 100%; min-width: 96px; padding: 12px 8px; border: 0; background: transparent; line-height: 1.2; cursor: pointer; }
+.sb td.v button:hover { outline: 2px solid var(--navy); outline-offset: -2px; }
+.sb td.v b { display: block; font: 800 15px/1.2 var(--sans); }
+.sb td.v small { display: block; margin-top: 3px; font-size: 12px; color: var(--ink-3); }
+.sb td.v.win { background: var(--you-wash); } .sb td.v.win b { color: #087a8c; }
+.sb td.v.lose { background: #fdecec; } .sb td.v.lose b { color: #9b1c1c; }
+.sb td.v.split { background: var(--mark); } .sb td.v.split b { color: var(--navy); }
+.sb td.v.pick { border-right: 2px solid var(--line); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sb td.v.lose { background: #3a1d22; } :root:not([data-theme="light"]) .sb td.v.lose b { color: #fca5a5; } :root:not([data-theme="light"]) .sb td.v.win b { color: #67e0e1; } }
+.verdict { margin: 0 0 16px; color: var(--navy); font: 800 24px/1.25 var(--sans); font-stretch: 106%; }
+.ord { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 18px; }
+.ord span { padding: 6px 12px; border-radius: 8px; background: var(--panel); font-size: 14px; color: var(--ink-2); }
+.ord b { color: var(--navy); }
+.reasons { list-style: none; margin: 0; padding: 0; }
+.reasons li { padding: 10px 0; border-top: 1px solid var(--line); font-size: 15px; }
+.reasons li:first-child { border-top: 0; }
+.reasons .dim { display: flex; justify-content: space-between; gap: 8px; font-weight: 700; color: var(--navy); }
+.reasons q { display: block; margin-top: 4px; color: var(--ink-2); quotes: "C" "D"; }
+.src { list-style: none; margin: 0 0 14px; padding: 0; }
+.src li { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 9px 0; border-top: 1px solid color-mix(in srgb, var(--navy) 12%, transparent); font-size: 14px; }
+.src li:first-child { border-top: 0; }
+.src a { overflow-wrap: anywhere; color: var(--ink); }
+.src .own { font-size: 12px; color: var(--ink-3); }
+.src .n { font-weight: 800; color: var(--navy); align-self: center; }
+.insight { margin: 0; padding: 14px 16px; border-radius: 10px; background: var(--surface); border-left: 5px solid var(--you); font-size: 15px; }
+.fc { width: 100%; border-collapse: collapse; font-size: 15px; }
+.fc th { font-size: 13px; font-weight: 700; color: var(--ink-2); text-align: left; border-bottom: 1px solid var(--line); }
+.fc td:first-child { font-weight: 700; color: var(--navy); }
+.fc tr:last-child td { border-bottom: 0; }
+.fc td, .fc th { text-align: left; white-space: normal; }
+.fc td { padding: 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.fc th { padding: 12px 14px; }
+.ans { padding: 16px 20px; border-top: 1px solid var(--line); }
+.ans:first-child { border-top: 0; }
+.ans .q { font-weight: 700; color: var(--navy); }
+.ans .m { font-size: 13px; color: var(--ink-3); margin: 2px 0 6px; }
+.ans p { margin: 0; color: var(--ink-2); font-size: 15px; }
+</style>
+</head>
+<body>
+<div class="tip hide" id="tip" role="tooltip"></div>
+<div class="wrap">
+  <header class="mast">
+    <nav class="nav" aria-label="Tools"><svg width="24" height="24" viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="17" width="7" height="11" rx="2" fill="#3a547a"/><rect x="12.5" y="10" width="7" height="18" rx="2" fill="#3a547a"/><rect x="21" y="3" width="7" height="25" rx="2" fill="#0aa8bf"/></svg><a href="./">Competitor Radar</a><a href="funnel.html">Funnel Gap Radar</a><a href="headtohead.html" aria-current="page">Head-to-Head Radar</a></nav>
+    <span class="stamp">OpenAI API (gpt-4o) · Oct 2026</span>
+  </header>
+  <p class="mockbar"><b>Real data, via the OpenAI API.</b> All 60 forced-pick answers (6 rivals × 2 name orders × 5 runs each) and all 12 open-comparison answers came from the OpenAI API (gpt-4o) directly — same question text as a ChatGPT conversation, no memory or personalization, but no browsing either, so none of the reasoning below carries citations. The model showed solid, accurate knowledge of every rival here.</p>
+
+  <section id="headline"></section>
+
+  <section class="sec">
+    <div class="sechead"><div><h2 class="title">Scoreboard</h2><p class="sub">Who the model picks when forced to choose, out of 10 live runs (5 per name order).</p></div></div>
+    <div class="legend"><span><i class="sw" style="background:var(--you-wash);border:1px solid var(--you)"></i>Superhuman picked more often</span><span><i class="sw" style="background:#fdecec;border:1px solid #e9a5a5"></i>Rival picked more often</span></div>
+    <div class="tablewrap"><table class="sb" id="sb"></table></div>
+    <p class="note">Each cell is clickable for the order breakdown and the single-run reasoning behind it. "Stable" means every one of the 10 runs agreed; "Split" means the result varied run to run, including within one name order.</p>
+  </section>
+
+  <section class="sec" id="comp">
+    <div class="sechead"><div><h2 class="title">Inside each matchup</h2><p class="sub">The forced-pick record, plus what the model said in one open-ended "which should I choose" run per order.</p></div></div>
+    <div class="tabs" id="ctabs"></div>
+    <div id="cpanel"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sechead"><div><h2 class="title">Worth checking</h2><p class="sub">Claims the model made in the open-comparison runs that are specific enough to verify against your own pricing and docs.</p></div></div>
+    <div class="tablewrap"><table class="fc" id="fc"></table></div>
+    <p class="note">These are unverified — pulled straight from the model's answers (no browsing on this route), not checked against a fact sheet yet.</p>
+  </section>
+
+  <section class="sec" id="find">
+    <div class="sechead"><div><h2 class="title">Read the source answers</h2><p class="sub" id="findsub">The open-ended comparison run for each rival and order — the raw material behind "Inside each matchup."</p></div></div>
+    <div class="filters">
+      <select id="fr" aria-label="Rival"></select><select id="fo" aria-label="Order"></select>
+      <button class="go" id="go" type="button">Search</button>
+    </div>
+    <div class="pl hide" id="pl"></div>
+  </section>
+
+  <section class="sec">
+    <div class="sechead"><h2 class="title">How this works, and what it doesn't cover yet</h2></div>
+    <ul class="how">
+      <li>Forced-pick question: "If you had to pick one email client for a busy professional, Superhuman or {rival}?" Asked in both name orders, 5 fresh runs each (60 answers total), via the OpenAI API (gpt-4o) directly rather than the ChatGPT web app, with a system prompt forcing a decisive pick.</li>
+      <li>Open comparison question: "Superhuman vs. {rival}: which should I choose?" Asked once per order (12 answers), no system prompt — this is where the qualitative reasoning below comes from. It is <b>not</b> repeated, so a single odd answer could be noise. The API route has no browsing, so none of these answers carry citations — they're the model's general knowledge, not a sourced comparison.</li>
+      <li>Both orders are asked because the model can lean toward whichever brand is named first. For Shortwave, Hey, Front, Missive and Mailbird it barely matters — Superhuman wins 8 or 10 of 10 either way. Spark Mail is the one real exception: Superhuman wins only 2 of 5 when named first, but 4 of 5 when Spark Mail is named first instead — a genuine, order-sensitive close contest, not a clean win.</li>
+      <li>The headline finding: Superhuman wins cleanly almost everywhere, but Spark Mail is a real rival on the model's own telling — genuine cross-platform support (iOS, Android, macOS, Windows) against Superhuman's macOS/iOS-only reach, a working free tier, and a smart auto-categorized inbox the model calls out specifically.</li>
+      <li>Not yet covered: pricing, integrations, onboarding, setup and support as separate scored dimensions — they'd need their own repeated, structured prompts to be real rather than invented. Also not covered: any run through the ChatGPT web app, and any run while logged in.</li>
+    </ul>
+  </section>
+</div>
+<script>
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const YOU = "Superhuman";
+
+// Real forced-pick tallies: 5 runs per order, from the OpenAI API (gpt-4o), Oct 2026.
+// you: Superhuman named first. them: rival named first. Each is {blvd, rival} out of 5 (property kept as "blvd" internally).
+const H2H = {
+  Shortwave: {
+    you: { blvd: 5, rival: 0 }, them: { blvd: 5, rival: 0 },
+    openPoints: [
+      "Positioned as speed vs. collaboration: Superhuman consistently framed around raw speed, keyboard shortcuts and individual-user productivity; Shortwave framed as a “modern, collaborative email client” with AI-driven categorization and team-oriented threading.",
+      "Both are Gmail-centric and both are described as having trial/demo options, but Superhuman is repeatedly flagged as the pricier, more premium option against Shortwave's more flexible tiers.",
+      "Forced pick agrees completely: Superhuman sweeps 10 of 10. Shortwave's collaboration angle doesn't move the needle once the question is framed around individual productivity rather than team workflows.",
+    ],
+    openCites: "No citations (API route, no browsing) — general knowledge, accurate on both products' actual positioning.",
+  },
+  "Spark Mail": {
+    you: { blvd: 2, rival: 3 }, them: { blvd: 4, rival: 1 },
+    openPoints: [
+      "The closest matchup in this set, and the only rival where Superhuman doesn't win the majority of “named-first” runs: Spark Mail wins 3 of 5 when Superhuman is named first, but Superhuman recovers to 4 of 5 when Spark Mail is named first instead — an unusual reverse-leaning order effect, not the more typical pattern of the first-named brand winning.",
+      "Spark Mail's case rests on real, specific strengths: a smart auto-categorized inbox (Personal/Notifications/Newsletters), genuine cross-platform support (iOS, Android, macOS, Windows) against Superhuman's macOS/iOS-only reach, and a meaningfully lower price with a working free tier.",
+      "Superhuman's case stays the same across both runs: speed, keyboard shortcuts, and a minimalist interface for high-volume individual users — a real trade-off, not a one-sided story, which is exactly why this is the only rival under 7 of 10 overall.",
+    ],
+    openCites: "No citations — general knowledge, with specific and accurate claims about both products' platform support and pricing structure.",
+  },
+  Hey: {
+    you: { blvd: 5, rival: 0 }, them: { blvd: 5, rival: 0 },
+    openPoints: [
+      "Positioned as privacy/philosophy vs. speed/efficiency: Hey (by Basecamp) framed around blocking trackers, the Screener and Imbox concepts, and a deliberately unconventional approach to inbox management; Superhuman framed around keyboard-shortcut speed and Gmail integration.",
+      "Pricing is a real differentiator the model surfaces specifically: Hey's flat $99/year vs. Superhuman's roughly $30/month — Hey framed as more economical long-term despite its steeper learning curve and more limited third-party integrations.",
+      "Forced pick agrees completely: Superhuman sweeps 10 of 10. Hey's privacy-first philosophy and lower price don't flip the result once the question is framed around speed and efficiency specifically.",
+    ],
+    openCites: "No citations — the Hey-specific features (Screener, Imbox) and pricing are accurately described.",
+  },
+  Front: {
+    you: { blvd: 4, rival: 1 }, them: { blvd: 4, rival: 1 },
+    openPoints: [
+      "A clean, stable positioning split rather than a true toss-up: Front is consistently framed as built for team collaboration and shared inboxes (support@/sales@ style addresses), while Superhuman is framed as built for individual productivity — the model explicitly separates “team” from “individual” use cases in both runs.",
+      "Front's integration breadth (CRM systems, project management tools, workflow automation) is called out as its real strength; Superhuman's speed and minimalist interface remain its consistent selling point.",
+      "Forced pick reflects that positioning: Superhuman wins 8 of 10, stable in both directions (4 of 5 each way) — a real but moderate edge, not a sweep, because Front's use case (team shared inboxes) is different enough from Superhuman's (individual speed) that the model doesn't always default to one over the other.",
+    ],
+    openCites: "No citations — the collaboration-vs-individual framing is accurate for both products.",
+  },
+  Missive: {
+    you: { blvd: 5, rival: 0 }, them: { blvd: 3, rival: 2 },
+    openPoints: [
+      "A moderate order lean: Superhuman sweeps 5 of 5 when named first, but drops to 3 of 5 when Missive is named first instead — a real but partial effect, not a full flip.",
+      "Missive is accurately described as combining email with team chat and task management (Trello/Asana/Slack integrations), positioned for teams; Superhuman stays positioned around individual speed, keyboard shortcuts and AI-driven inbox prioritization.",
+      "The model explicitly frames this as team-vs-individual rather than better-vs-worse in both runs — the order lean suggests the “team collaboration” framing gets slightly more weight when Missive is the first name the model processes.",
+    ],
+    openCites: "No citations — Missive's chat/task integrations are accurately described.",
+  },
+  Mailbird: {
+    you: { blvd: 5, rival: 0 }, them: { blvd: 5, rival: 0 },
+    openPoints: [
+      "Positioned almost entirely around platform: Mailbird is Windows-only with a one-time-purchase pricing option and deep customization (themes, layouts); Superhuman is macOS/iOS-first with subscription-only pricing and a minimalist, fixed interface.",
+      "The model is explicit that the “right” choice is largely dictated by operating system rather than feature superiority — Mailbird for Windows users, Superhuman for macOS users — yet still defaults to Superhuman when forced to pick one.",
+      "Forced pick agrees completely: Superhuman sweeps 10 of 10, despite the model's own text repeatedly saying OS compatibility should be the deciding factor rather than one product being objectively better.",
+    ],
+    openCites: "No citations — the Windows-only vs. macOS/iOS-first split and pricing models are both accurate.",
+  },
+};
+const RIV = Object.keys(H2H);
+
+// Claims worth checking, pulled from the open comparisons (no citations — API route, no browsing).
+const FACTS = [
+  ["Superhuman pricing", "Consistently described as premium/subscription, roughly $30/month, macOS/iOS-first (recently also Windows)", "Superhuman"],
+  ["Spark Mail pricing & platforms", "Described as having a working free tier plus lower-cost premium plans, and genuine cross-platform support (iOS, Android, macOS, Windows)", "Spark Mail"],
+  ["Hey pricing", "Flat $99/year pricing, positioned as more economical long-term than Superhuman's monthly subscription", "Hey"],
+  ["Front positioning", "Built for team collaboration and shared inboxes, with CRM/project-management integrations — not positioned as an individual-productivity tool", "Front"],
+  ["Missive positioning", "Combines email with team chat and task management (named integrations: Trello, Asana, Slack)", "Missive"],
+  ["Mailbird platform & pricing", "Windows-only, offers a one-time-purchase lifetime license as an alternative to subscription pricing", "Mailbird"],
+];
+
+function pct(obj) { const t = obj.blvd + obj.rival; return t ? Math.round((obj.blvd / t) * 100) : 0; }
+function total(r) { const m = H2H[r]; return { blvd: m.you.blvd + m.them.blvd, rival: m.you.rival + m.them.rival }; }
+function stability(r) {
+  const m = H2H[r];
+  const youWin = m.you.blvd > m.you.rival;
+  const themWin = m.them.blvd > m.them.rival;
+  return youWin === themWin ? "Stable" : "Split";
+}
+
+function renderHead() {
+  const wins = RIV.filter((r) => total(r).blvd > total(r).rival);
+  const losses = RIV.filter((r) => total(r).blvd < total(r).rival);
+  const unstable = RIV.filter((r) => stability(r) === "Split");
+  $("#headline").innerHTML = `<h1 class="title">The model picks ${YOU} in <mark class="hl you">${wins.length} of ${RIV.length}</mark> forced-pick head-to-heads.</h1>
+  <p class="facts">Five are clean sweeps or near-sweeps for ${YOU}. The one real contest is <b>Spark Mail</b> — ${esc(unstable.join(", "))} — which flips depending on which name the model hears first, the only rival here with a genuine, order-sensitive case against ${YOU}.</p>`;
+}
+
+function renderBoard() {
+  let h = `<thead><tr><th class="rl">${YOU} vs.</th><th>Named first</th><th>Named second</th><th>Overall (of 10)</th><th>Consistency</th></tr></thead><tbody>`;
+  for (const r of RIV) {
+    const t = total(r);
+    const v = t.blvd > t.rival ? "win" : t.blvd < t.rival ? "lose" : "split";
+    const st = stability(r);
+    h += `<tr><td class="rl">${esc(r)}</td>
+      <td class="v"><button type="button" data-r="${esc(r)}" data-o="you">${H2H[r].you.blvd} – ${H2H[r].you.rival}</button></td>
+      <td class="v"><button type="button" data-r="${esc(r)}" data-o="them">${H2H[r].them.blvd} – ${H2H[r].them.rival}</button></td>
+      <td class="v ${v} pick"><button type="button" data-r="${esc(r)}" data-o="all"><b>${t.blvd > t.rival ? YOU : t.blvd < t.rival ? esc(r) : "Tied"}</b><small>${t.blvd} – ${t.rival}</small></button></td>
+      <td class="v"><button type="button" data-r="${esc(r)}" data-o="all">${st}</button></td></tr>`;
+  }
+  $("#sb").innerHTML = h + "</tbody>";
+  $("#sb").querySelectorAll("button").forEach((b) => {
+    b.addEventListener("click", () => { CS = b.dataset.r; renderComp(); $("#comp").scrollIntoView({ behavior: "smooth", block: "start" }); });
+  });
+}
+
+let CS = "Spark Mail";
+function renderComp() {
+  $("#ctabs").innerHTML = `<span class="tabslabel">${YOU} vs.</span>` + RIV.map((r) => `<button type="button" data-r="${esc(r)}" aria-pressed="${r === CS}">${esc(r)}</button>`).join("");
+  $("#ctabs").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => { CS = b.dataset.r; renderComp(); }));
+  const m = H2H[CS], t = total(CS);
+  const vtxt = t.blvd > t.rival ? `The model picks ${YOU} in ${t.blvd} of 10 forced-pick runs.` : t.blvd < t.rival ? `The model picks ${esc(CS)} in ${t.rival} of 10 forced-pick runs.` : `Dead even across 10 runs.`;
+  $("#cpanel").innerHTML = `<div class="cp"><div>
+      <p class="verdict">${vtxt}</p>
+      <div class="ord"><span>${YOU} named first: <b>${m.you.blvd} of 5</b> for ${YOU}</span><span>${esc(CS)} named first: <b>${m.them.blvd} of 5</b> for ${YOU}</span></div>
+      <p class="dim" style="margin:0 0 6px;font-weight:700;color:var(--navy)">Open comparison (single run, not repeated)</p>
+      <ul class="how">${m.openPoints.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>
+    </div><div class="cn"><h3>What the open comparison cited</h3>
+      <p class="insight">${esc(m.openCites)}</p>
+      <p class="insight">This is from one run per order (2 total), not the 10 forced-pick runs above — treat it as a data point, not a trend.</p>
+    </div></div>`;
+}
+
+function renderFacts() {
+  $("#fc").innerHTML = `<thead><tr><th>Claim</th><th>What the model said</th><th>Source rival</th></tr></thead><tbody>` +
+    FACTS.map(([c, said, src]) => `<tr><td>${esc(c)}</td><td>${esc(said)}</td><td>${esc(src)}</td></tr>`).join("") + "</tbody>";
+}
+
+// Real source answers (from the single open-comparison run per rival/order, OpenAI API gpt-4o).
+const RAW = {
+  "Shortwave|you": "Choosing between Superhuman and Shortwave depends on your needs. Superhuman: known for speed and efficiency, keyboard shortcuts for almost every action, split inbox, follow-up reminders, read status tracking, sleek minimalistic design, premium subscription fee, mainly focuses on Gmail users. Shortwave: positions itself as a modern, collaborative email client, tools for communication and collaboration within emails, uses threads for managing emails, integrations with other tools, may have different pricing models or free versions, supports multiple email providers. If you need fast, minimal, high-volume email management, Superhuman might be suitable; if you want more collaborative features, consider Shortwave.",
+  "Shortwave|them": "Shortwave: designed to work seamlessly with Gmail, enhanced sorting, AI-driven categorization, task management, may integrate collaboration features useful for team settings, streamlined minimalist design. Superhuman: known for speed and performance, keyboard shortcuts, read-status tracking, follow-up reminders and scheduling, sleek modern interface, typically more expensive, targeting users willing to invest in premium email management. If rapid email processing and tracking features are the priority, Superhuman could be the better choice.",
+  "Spark Mail|you": "Superhuman: speed and efficiency for power users, keyboard shortcuts, sleek minimalistic design, AI-generated insights/reminders/undo send, ideal for individuals handling large volumes of email, premium priced, primarily macOS and iOS. Spark Mail: collaborative features (shared drafts, collaborative editing), extensive customization (notifications, integrations, view settings), cross-platform support (macOS, Windows, iOS, Android), more accessible pricing with free and premium tiers. If speed and individual productivity are top priorities, Superhuman is designed for rapid email management; if you need to work closely with a team or want broader platform support, Spark's collaboration tools and cross-platform reach might be more useful.",
+  "Spark Mail|them": "Spark Mail: team collaboration (discuss emails and draft responses together in real-time), Smart Inbox auto-categorizes into Personal/Notifications/Newsletters, lots of customization, available on iOS/Android/macOS/Windows, generally more affordable with a robust free tier and lower-cost premium plans; noted as sometimes slower than Superhuman. Superhuman: extremely fast, keyboard-shortcut-focused, minimalist distraction-free interface, read receipts and insights, personalized onboarding, one of the more expensive email clients, primarily macOS and iOS with no native Windows or Android app. If cost is a significant factor, Spark may be the better choice given its competitive pricing; if speed and an intuitive interface are the priority, Superhuman might be worth the investment.",
+  "Hey|you": "Superhuman pros: speed via keyboard shortcuts, sleek minimalistic design, advanced features (read status, send later, follow-up reminders), personalized onboarding and support, seamless Gmail integration. Cons: relatively expensive (~$30/month), invite-only, Gmail-dependent. Hey pros: emphasizes privacy and blocks tracking pixels by default, unique features (Screener, Imbox, The Feed), fresh approach to reducing email overload, flat $99/year pricing (more economical long-term than Superhuman), independent of Gmail. Cons: learning curve, limited third-party integrations, less conventional. Choose Superhuman if speed and Gmail integration matter and price isn't a barrier; choose Hey if you prioritize privacy.",
+  "Hey|them": "Hey: emphasizes privacy and control, blocks email trackers, Screener (approve/block senders), The Imbox separates important from less-urgent emails, distinctive modern interface with a learning curve, subscription-based, not as integrated as some other services. Superhuman: renowned for speed and shortcuts, sleek minimalistic interface, split inboxes/reminders/read statuses, integrates seamlessly with Gmail, premium-priced. If privacy and new ways of managing email matter most, Hey might be the better choice; for speed and productivity, especially high email volume, Superhuman could be more beneficial.",
+  "Front|you": "Superhuman: known for incredibly fast user experience, shortcuts, streamlined interface, clean minimalistic design, read status/follow-up reminders/split inboxes, generally pricier/premium, primarily built for Gmail. Front: optimized for team collaboration, shared inboxes and external communication in one place, wide array of integrations/templates/workflow automations for team needs, combines email with real-time chat and task management, more traditional email-client interface with team/project-management features, plans scale with team size. If you're an individual or professional wanting a faster personal email experience, Superhuman might be better; if you're part of a team needing to collaborate on communications, Front could be more suitable.",
+  "Front|them": "Front: designed for team collaboration, excels where multiple people manage shared inboxes (support@/sales@), assign emails and add comments, integrates with CRM/project-management tools, well-suited for extensive customer-support email handling, offers rules and workflow automation. Superhuman: focuses on a fast, efficient, seamless experience for individual users, powerful keyboard shortcuts, clean minimalist UI, aimed at individuals optimizing personal inbox rather than collaboration, can be quite pricey. If looking for a team solution, Front might be the better choice; if just optimizing your own email experience, Superhuman might be more appropriate.",
+  "Missive|you": "Superhuman pros: speed and keyboard shortcuts, split inboxes and reminders for focus/productivity, minimalist design, priority support. Cons: expensive, primarily Gmail/macOS/iOS (recently Windows), learning curve for shortcuts. Missive pros: team collaboration (chat, assignments, shared inboxes), multi-account support across providers (not just Gmail), highly customizable with integrations and chat features, available on macOS/Windows/iOS/Android plus web. Cons: extensive features might be overwhelming, UI seen as less sleek by some, own learning curve. If team collaboration is essential, Missive's features might be more beneficial; if individual email speed and efficiency are priorities, Superhuman could be the better option.",
+  "Missive|them": "Missive: known for collaborative features, strong for teams (share and discuss emails within the app), combines email with chat and task management, high customization in how emails are processed, integrations with Trello/Asana/Slack, cross-platform (web, mobile iOS/Android, desktop). Superhuman: designed for speed and efficiency to reduce inbox time, heavy emphasis on keyboard shortcuts, smart features (undo send, follow-up reminders, read status), minimalist streamlined interface, AI-driven priority inbox. If looking for a team solution to collaborate on emails, Missive might be more suitable; if a solo user focused on personal productivity, Superhuman might be preferable.",
+  "Mailbird|you": "Superhuman: renowned for speed and keyboard shortcuts, sleek minimalistic design, read statuses/inbox-zero focus/split inboxes/email snoozing, preferred by professionals with high email volume, primarily macOS and iOS, subscription fee that can be higher than other clients. Mailbird: high customization (layouts, themes, color options), integrates with Google Calendar/WhatsApp/Slack and other productivity tools, user-friendly combined-communication interface, Windows-only, offers both a one-time lifetime-license purchase and subscription pricing, generally more affordable than Superhuman. Choose Superhuman if on macOS/iOS and value speed; choose Mailbird if on Windows or want a more affordable, integrated, customizable option.",
+  "Mailbird|them": "Mailbird: clean intuitive interface, Windows-only, one-time purchase option plus subscription model (relatively more cost-effective long-term), integrates with Google Calendar/Dropbox/others, supports POP3/IMAP/SMTP, extensive customization with layouts and themes, unified inbox for multiple accounts, ideal for users wanting a solid all-around Windows client. Superhuman: minimalist highly streamlined interface for speed and efficiency, primarily macOS/iOS/web with limitations elsewhere, subscription-based at a premium price point, heavy emphasis on shortcuts and quick actions, read receipts and undo send, split inbox and follow-up reminders, geared toward professionals prioritizing speed. Choose Mailbird if a Windows user wanting an affordable, integrative client; choose Superhuman if on macOS or you value speed and handle high email volume professionally.",
+};
+const F = { r: "", o: "", run: false };
+function renderFind() {
+  if (!F.run) return;
+  const rows = [];
+  for (const r of RIV) for (const o of ["you", "them"]) {
+    if (F.r && r !== F.r) continue;
+    if (F.o && o !== F.o) continue;
+    const key = r + "|" + o;
+    if (RAW[key]) rows.push({ r, o, text: RAW[key] });
+  }
+  $("#findsub").textContent = `${rows.length} answer${rows.length === 1 ? "" : "s"} on file (one open-comparison run exists per rival/order; some orders weren't re-run).`;
+  $("#pl").classList.remove("hide");
+  $("#pl").innerHTML = rows.map((a) => `<div class="ans"><div class="q">${a.o === "you" ? `${YOU} vs. ${esc(a.r)}` : `${esc(a.r)} vs. ${YOU}`}</div><div class="m">Single run · Open comparison</div><p>${esc(a.text)}</p></div>`).join("") || `<div class="ans"><p>No saved answer for this rival/order.</p></div>`;
+}
+function renderFilters() {
+  const opt = (v, l) => `<option value="${esc(v)}">${esc(l)}</option>`;
+  $("#fr").innerHTML = opt("", "All rivals") + RIV.map((r) => opt(r, r)).join("");
+  $("#fo").innerHTML = opt("", "Both orders") + opt("you", `${YOU} named first`) + opt("them", "Rival named first");
+  for (const [id, k] of [["#fr", "r"], ["#fo", "o"]]) $(id).addEventListener("change", (e) => (F[k] = e.target.value));
+  $("#go").addEventListener("click", () => { F.run = true; renderFind(); });
+}
+renderHead(); renderBoard(); renderComp(); renderFacts(); renderFilters();
+</script>
+</html>
