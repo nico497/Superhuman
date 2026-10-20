@@ -1,0 +1,53 @@
+{
+  "title": "Bottom-of-funnel content tracker",
+  "niche": "Fast, AI-assisted email client software for professionals and teams",
+  "you": "Superhuman",
+  "competitors": [
+    "Shortwave",
+    "Spark Mail",
+    "Hey",
+    "Front",
+    "Missive",
+    "Mailbird"
+  ],
+  "vendors": {
+    "Shortwave": "shortwave",
+    "Spark Mail": "spark ?mail|sparkmailapp",
+    "Hey": "\\bhey\\.com\\b|hey email",
+    "Front": "\\bfront\\b(?! page)|frontapp",
+    "Missive": "missive",
+    "Mailbird": "mailbird",
+    "Superhuman": "superhuman",
+    "Gmail": "\\bgmail\\b",
+    "Outlook": "\\boutlook\\b",
+    "Airmail": "airmail",
+    "Canary Mail": "canary ?mail",
+    "Edison Mail": "edison ?mail",
+    "Newton Mail": "newton ?mail",
+    "Readdle Spark": "readdle",
+    "Polymail": "polymail",
+    "Blue Mail": "blue ?mail"
+  },
+  "audiences": [
+    ["Email productivity", "email productiv"],
+    ["Inbox zero", "inbox zero"],
+    ["AI email assistant", "ai (email|writing) assist|ai.?powered email"],
+    ["Keyboard shortcuts and speed", "keyboard shortcut|speed up email"],
+    ["Team collaboration on email", "shared inbox|team inbox|collaborat"],
+    ["Email triage and sorting", "triage|email sorting|priority inbox"],
+    ["Scheduling and follow-ups", "send later|follow.?up remind|snooze"],
+    ["Email templates and snippets", "email template|snippet"],
+    ["Calendar integration", "calendar integrat|scheduling link"],
+    ["Mobile email app", "mobile (email|app)|ios app|android app"],
+    ["Enterprise and business email", "enterprise email|business email"],
+    ["Pricing and plans", "pricing|subscription plan"],
+    ["Privacy and security", "privacy|encryption|security"],
+    ["Onboarding and migration", "migrat(e|ion)|switch(ing)? from gmail|switch(ing)? from outlook"],
+    ["Read receipts and tracking", "read receipt|email tracking"],
+    ["Integrations", "integration|\\bapi\\b|\\bslack\\b|\\bcrm\\b"],
+    ["Comparisons and alternatives", "alternative|vs\\.|comparison"],
+    ["Remote work and productivity culture", "remote work|async|productivity culture"],
+    ["Customer stories and use cases", "case study|customer story|use case"],
+    ["Product updates and releases", "product update|new feature|release note"]
+  ]
+}
