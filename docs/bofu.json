@@ -3,7 +3,7 @@
   "title": "Bottom-of-funnel content tracker",
   "niche": "Fast, AI-assisted email client software for professionals and teams",
   "you": "Superhuman",
-  "generated": "2026-10-20T01:26:29+00:00",
+  "generated": "2026-10-26T13:15:59+00:00",
   "state_updated": "2026-10-20T01:18:11+00:00",
   "repo": "nico497/Superhuman"
  },
@@ -40,8 +40,8 @@
  "sites": [
   {
    "name": "Superhuman",
-   "tracked": 272,
-   "considered": 134,
+   "tracked": 289,
+   "considered": 139,
    "own_pricing": "https://superhuman.com/plans",
    "hubs": [
     "https://superhuman.com/customer-stories"
@@ -56,8 +56,8 @@
   },
   {
    "name": "Spark Mail",
-   "tracked": 641,
-   "considered": 424,
+   "tracked": 643,
+   "considered": 425,
    "own_pricing": "https://sparkmailapp.com/pricing",
    "hubs": []
   },
@@ -70,8 +70,8 @@
   },
   {
    "name": "Front",
-   "tracked": 638,
-   "considered": 637,
+   "tracked": 640,
+   "considered": 639,
    "own_pricing": "https://front.com/pricing",
    "hubs": [
     "https://front.com/customer-stories"
@@ -88,8 +88,8 @@
   },
   {
    "name": "Mailbird",
-   "tracked": 1148,
-   "considered": 1147,
+   "tracked": 1190,
+   "considered": 1189,
    "own_pricing": "https://www.getmailbird.com/pricing/",
    "hubs": []
   }
@@ -113,8 +113,8 @@
   "Blue Mail"
  ],
  "excluded": {
-  "templated pages": 474,
-  "webinars, glossary, events and category pages": 229
+  "templated pages": 486,
+  "webinars, glossary, events and category pages": 230
  },
  "pages": [
   {
@@ -149,6 +149,13 @@
    "site": "Superhuman",
    "url": "https://superhuman.com/customer-stories/mail/hebbia",
    "path": "/customer-stories/mail/hebbia",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Superhuman",
+   "url": "https://superhuman.com/customer-stories/mail/ornn",
+   "path": "/customer-stories/mail/ornn",
    "type": "case",
    "targets": []
   },
@@ -459,6 +466,13 @@
    "site": "Front",
    "url": "https://front.com/customer-stories/electrical-dot-com",
    "path": "/customer-stories/electrical-dot-com",
+   "type": "case",
+   "targets": []
+  },
+  {
+   "site": "Front",
+   "url": "https://front.com/customer-stories/empower-work",
+   "path": "/customer-stories/empower-work",
    "type": "case",
    "targets": []
   },
