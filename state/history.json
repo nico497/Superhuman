@@ -95,6 +95,54 @@
      "pages": 1190
     }
    }
+  },
+  {
+   "week": "2026-W46",
+   "date": "2026-11-09T16:25:10+00:00",
+   "sites": {
+    "Superhuman": {
+     "new": 9,
+     "updated": 1,
+     "removed": 0,
+     "pages": 150
+    },
+    "Shortwave": {
+     "new": 0,
+     "updated": 0,
+     "removed": 0,
+     "pages": 89
+    },
+    "Spark Mail": {
+     "new": 1,
+     "updated": 0,
+     "removed": 0,
+     "pages": 647
+    },
+    "Hey": {
+     "new": 0,
+     "updated": 0,
+     "removed": 0,
+     "pages": 0
+    },
+    "Front": {
+     "new": 0,
+     "updated": 10,
+     "removed": 0,
+     "pages": 642
+    },
+    "Missive": {
+     "new": 0,
+     "updated": 13,
+     "removed": 0,
+     "pages": 272
+    },
+    "Mailbird": {
+     "new": 21,
+     "updated": 26,
+     "removed": 0,
+     "pages": 1211
+    }
+   }
   }
  ]
 }
